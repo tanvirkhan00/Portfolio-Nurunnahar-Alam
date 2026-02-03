@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,44 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
+
 <body>
+    <!-- Cursor Effect -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Floating Particles -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
+        <div class="nav-glow"></div>
         <div class="container">
             <div class="nav-brand">
-                <span class="brand-name">Nurunnahar</span>
-                <span class="brand-subtitle">BSc in Nursing</span>
+                <div class="brand-logo">
+                    <svg viewBox="0 0 50 50" fill="none">
+                        <path d="M25 5 L45 15 L45 35 L25 45 L5 35 L5 15 Z" stroke="currentColor" stroke-width="2"
+                            fill="none" />
+                        <circle cx="25" cy="25" r="8" fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">Nurunnahar</span>
+                    <span class="brand-subtitle">BSc in Nursing</span>
+                </div>
             </div>
             <button class="mobile-menu-toggle" id="mobileMenuToggle">
                 <span></span>
@@ -25,6 +55,7 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
@@ -35,90 +66,387 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background"></div>
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="mesh-gradient"></div>
+        </div>
         <div class="container hero-content">
             <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for Opportunities
+                </div>
                 <div class="hero-greeting">Hello, I'm</div>
-                <h1 class="hero-title">Nurunnahar</h1>
-                <div class="hero-subtitle">Compassionate & Dedicated Nurse</div>
+                <h1 class="hero-title">
+                    <span class="title-line">Nurunnahar</span>
+                    <span class="title-decoration"></span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text">Compassionate & Dedicated Nurse</span>
+                    <span class="typing-cursor">|</span>
+                </div>
                 <p class="hero-description">
-                    Specializing in patient-centered care with a commitment to excellence in healthcare delivery
+                    Specializing in patient-centered care with a commitment to excellence in healthcare delivery.
+                    Bringing compassion, expertise, and dedication to every patient interaction.
                 </p>
+                <div class="hero-stats-mini">
+                    <div class="stat-mini">
+                        <div class="stat-mini-number">2024</div>
+                        <div class="stat-mini-label">Graduate</div>
+                    </div>
+                    <div class="stat-mini">
+                        <div class="stat-mini-number">BSc</div>
+                        <div class="stat-mini-label">Nursing</div>
+                    </div>
+                    <div class="stat-mini">
+                        <div class="stat-mini-number">100%</div>
+                        <div class="stat-mini-label">Dedicated</div>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <span>Learn More</span>
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="image-frame">
-                    <img src="/src/profile.png.png" alt="Nurunnahar" id="profileImage">
-                    <div class="image-decoration"></div>
+                    <div class="image-glow"></div>
+                    <img src="/src/profile.png" alt="Nurunnahar" id="profileImage">
+                    <div class="image-decoration decoration-1"></div>
+                    <div class="image-decoration decoration-2"></div>
+                    <div class="floating-card card-1">
+                        <div class="card-icon">❤️</div>
+                        <div class="card-text">Patient Care</div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-icon">🏥</div>
+                        <div class="card-text">Healthcare Pro</div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="scroll-line"></div>
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about section">
+        <div class="section-decoration">
+            <div class="decoration-circle"></div>
+        </div>
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Who I Am</span>
+                <span class="section-tag">
+                    <span class="tag-line"></span>
+                    Who I Am
+                    <span class="tag-line"></span>
+                </span>
                 <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Dedicated to making a difference in healthcare</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-intro">
-                        I am a compassionate and dedicated nurse with a Bachelor's degree in Nursing from Marks Medical College. 
-                        My journey in healthcare is driven by a deep commitment to providing exceptional patient care and making 
-                        a positive impact on the lives of those I serve.
-                    </p>
+                    <div class="about-quote">
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                        </svg>
+                        <p class="about-intro">
+                            I am a compassionate and dedicated nurse with a Bachelor's degree in Nursing from Marks
+                            Medical College.
+                            My journey in healthcare is driven by a deep commitment to providing exceptional patient
+                            care and making
+                            a positive impact on the lives of those I serve.
+                        </p>
+                    </div>
                     <p>
-                        With proficiency in delivering patient-centered care, performing comprehensive assessments, and collaborating 
-                        with interdisciplinary teams, I bring both theoretical knowledge and practical experience to every healthcare 
-                        setting. Currently serving as a Staff Nurse at Modern Diagnostic Centre & Clinic, I continue to expand my 
+                        With proficiency in delivering patient-centered care, performing comprehensive assessments, and
+                        collaborating
+                        with interdisciplinary teams, I bring both theoretical knowledge and practical experience to
+                        every healthcare
+                        setting. Currently serving as a Staff Nurse at Modern Diagnostic Centre & Clinic, I continue to
+                        expand my
                         expertise in various aspects of nursing care.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-item">
-                            <div class="highlight-icon">🎓</div>
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                </svg>
+                            </div>
                             <div class="highlight-text">
                                 <h4>Education</h4>
                                 <p>BSc in Nursing, University of Dhaka</p>
                             </div>
                         </div>
                         <div class="highlight-item">
-                            <div class="highlight-icon">💼</div>
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                                </svg>
+                            </div>
                             <div class="highlight-text">
                                 <h4>Current Role</h4>
                                 <p>Staff Nurse at Modern Diagnostic Centre</p>
                             </div>
                         </div>
                         <div class="highlight-item">
-                            <div class="highlight-icon">🏥</div>
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                    <polyline points="9 22 9 12 15 12 15 22" />
+                                </svg>
+                            </div>
                             <div class="highlight-text">
-                                <h4>Experience</h4>
-                                <p>Clinical & Professional Healthcare</p>
+                                <h4>Specialization</h4>
+                                <p>Patient-Centered Healthcare</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="2024">2019</div>
-                        <div class="stat-label">Graduated</div>
+                <div class="about-visual">
+                    <div class="stats-wrapper">
+                        <div class="stat-card stat-primary">
+                            <div class="stat-icon">🎓</div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-target="2024">2019</div>
+                                <div class="stat-label">Graduated</div>
+                            </div>
+                            <div class="stat-background"></div>
+                        </div>
+                        <div class="stat-card stat-secondary">
+                            <div class="stat-icon">⏱️</div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-target="6">0</div>
+                                <div class="stat-label">Months Internship</div>
+                            </div>
+                            <div class="stat-background"></div>
+                        </div>
+                        <div class="stat-card stat-accent">
+                            <div class="stat-icon">💯</div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-target="100">0</div>
+                                <div class="stat-label">% Dedicated</div>
+                            </div>
+                            <div class="stat-background"></div>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="6">0</div>
-                        <div class="stat-label">Months Internship</div>
+                    <div class="certification-badge">
+                        <div class="badge-ring"></div>
+                        <div class="badge-content">
+                            <div class="badge-icon">✓</div>
+                            <div class="badge-title">Certified</div>
+                            <div class="badge-subtitle">Professional Nurse</div>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="100">0</div>
-                        <div class="stat-label">% Dedicated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+        <div class="section-decoration gallery-decoration">
+            <div class="decoration-circle"></div>
+            <div class="decoration-circle"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <span class="tag-line"></span>
+                    Professional Journey
+                    <span class="tag-line"></span>
+                </span>
+                <h2 class="section-title">Skills & Competencies Gallery</h2>
+                <p class="section-subtitle">Visual showcase of my nursing expertise and capabilities</p>
+            </div>
+
+            <div class="gallery-container">
+                <div class="swiper gallerySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1: Patient Assessment -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=800&h=600&fit=crop"
+                                        alt="Patient Assessment">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                <div class="gallery-content">
+                                    <div class="gallery-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                        </svg>
+                                    </div>
+                                    <h3>Patient Assessment & Monitoring</h3>
+                                    <p>Comprehensive evaluation of patient vital signs, symptoms, and overall health
+                                        status using advanced monitoring techniques</p>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Vital Signs</span>
+                                        <span class="skill-tag">Health Monitoring</span>
+                                        <span class="skill-tag">Clinical Evaluation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: Medication Management -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=600&fit=crop"
+                                        alt="Medication Management">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                <div class="gallery-content">
+                                    <div class="gallery-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                                            <path d="M9 11h6M12 8v6" />
+                                        </svg>
+                                    </div>
+                                    <h3>Medication Administration</h3>
+                                    <p>Safe and accurate medication administration with proper dosage calculation and
+                                        patient education on medication regimens</p>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Drug Administration</span>
+                                        <span class="skill-tag">Dosage Calculation</span>
+                                        <span class="skill-tag">Patient Safety</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3: Wound Care -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&h=600&fit=crop"
+                                        alt="Wound Care">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                <div class="gallery-content">
+                                    <div class="gallery-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                        </svg>
+                                    </div>
+                                    <h3>Advanced Wound Care</h3>
+                                    <p>Expert wound assessment, dressing changes, and healing management using
+                                        evidence-based practices</p>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Wound Assessment</span>
+                                        <span class="skill-tag">Dressing Changes</span>
+                                        <span class="skill-tag">Healing Management</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4: IV Therapy -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=600&fit=crop"
+                                        alt="IV Therapy">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                <div class="gallery-content">
+                                    <div class="gallery-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <path d="M12 6v6l4 2" />
+                                        </svg>
+                                    </div>
+                                    <h3>IV Therapy & Infusion</h3>
+                                    <p>Skilled in intravenous therapy, infusion management, and maintaining IV access
+                                        with patient comfort priority</p>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">IV Administration</span>
+                                        <span class="skill-tag">Infusion Control</span>
+                                        <span class="skill-tag">Vascular Access</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5: Team Collaboration -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop"
+                                        alt="Team Collaboration">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                <div class="gallery-content">
+                                    <div class="gallery-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                            <circle cx="9" cy="7" r="4" />
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                                        </svg>
+                                    </div>
+                                    <h3>Interdisciplinary Collaboration</h3>
+                                    <p>Effective communication and teamwork with healthcare professionals to optimize
+                                        patient outcomes</p>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Team Communication</span>
+                                        <span class="skill-tag">Collaboration</span>
+                                        <span class="skill-tag">Leadership</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 6: Patient Education -->
+                        <div class="swiper-slide">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&h=600&fit=crop"
+                                        alt="Patient Education">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                <div class="gallery-content">
+                                    <div class="gallery-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                                        </svg>
+                                    </div>
+                                    <h3>Patient & Family Education</h3>
+                                    <p>Comprehensive health education to patients and families, promoting health
+                                        literacy and self-care</p>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Health Teaching</span>
+                                        <span class="skill-tag">Family Support</span>
+                                        <span class="skill-tag">Health Promotion</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -138,7 +466,8 @@
                         <div class="timeline-date">May 2025 - Present</div>
                         <h3>Staff Nurse</h3>
                         <h4>Modern Diagnostic Centre & Clinic</h4>
-                        <p>Providing comprehensive nursing care, patient assessments, medication administration, and collaborating with healthcare teams to ensure optimal patient outcomes.</p>
+                        <p>Providing comprehensive nursing care, patient assessments, medication administration, and
+                            collaborating with healthcare teams to ensure optimal patient outcomes.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -147,7 +476,8 @@
                         <div class="timeline-date">2024</div>
                         <h3>Clinical Internship</h3>
                         <h4>Marks Medical College & Hospital (6 Months)</h4>
-                        <p>Completed comprehensive internship across all wards, gaining hands-on experience in diverse clinical settings and patient care scenarios.</p>
+                        <p>Completed comprehensive internship across all wards, gaining hands-on experience in diverse
+                            clinical settings and patient care scenarios.</p>
                         <ul class="experience-list">
                             <li>Worked in all hospital wards and departments</li>
                             <li>Patient care and monitoring responsibilities</li>
@@ -161,7 +491,8 @@
                         <div class="timeline-date">2024</div>
                         <h3>Clinical Training</h3>
                         <h4>Dhaka Medical College (1 Month)</h4>
-                        <p>Gained valuable experience in one of Dhaka's premier medical institutions, working with diverse patient populations and complex medical cases.</p>
+                        <p>Gained valuable experience in one of Dhaka's premier medical institutions, working with
+                            diverse patient populations and complex medical cases.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -170,7 +501,8 @@
                         <div class="timeline-date">2024</div>
                         <h3>Clinical Training</h3>
                         <h4>Marks Medical College & Hospital (2 Months)</h4>
-                        <p>Extended clinical training focused on specialized nursing procedures and patient care protocols.</p>
+                        <p>Extended clinical training focused on specialized nursing procedures and patient care
+                            protocols.</p>
                     </div>
                 </div>
             </div>
@@ -179,88 +511,154 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
+        <div class="section-decoration skills-decoration">
+            <div class="decoration-circle"></div>
+        </div>
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">What I Do Best</span>
-                <h2 class="section-title">Key Skills & Competencies</h2>
+                <span class="section-tag">
+                    <span class="tag-line"></span>
+                    What I Do Best
+                    <span class="tag-line"></span>
+                </span>
+                <h2 class="section-title">Core Competencies</h2>
+                <p class="section-subtitle">Comprehensive nursing skills for exceptional patient care</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
+                    <div class="skill-number">01</div>
                     <div class="skill-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                         </svg>
                     </div>
                     <h3>Patient Assessment</h3>
-                    <p>Comprehensive patient monitoring and vital signs assessment</p>
+                    <p>Comprehensive patient monitoring and vital signs assessment with attention to detail</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="95"></div>
+                        </div>
+                        <span class="progress-percent">95%</span>
+                    </div>
                 </div>
                 <div class="skill-card">
+                    <div class="skill-number">02</div>
                     <div class="skill-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2"/>
-                            <path d="M9 11h6M12 8v6"/>
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M9 11h6M12 8v6" />
                         </svg>
                     </div>
                     <h3>Medication Management</h3>
-                    <p>Safe medication administration and dosage calculation</p>
+                    <p>Safe medication administration and precise dosage calculation</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="92"></div>
+                        </div>
+                        <span class="progress-percent">92%</span>
+                    </div>
                 </div>
                 <div class="skill-card">
+                    <div class="skill-number">03</div>
                     <div class="skill-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
                         </svg>
                     </div>
                     <h3>Wound Care</h3>
                     <p>Expert wound care and dressing change procedures</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="88"></div>
+                        </div>
+                        <span class="progress-percent">88%</span>
+                    </div>
                 </div>
                 <div class="skill-card">
+                    <div class="skill-number">04</div>
                     <div class="skill-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
                         </svg>
                     </div>
                     <h3>IV Therapy</h3>
-                    <p>Intravenous therapy and infusion management</p>
+                    <p>Intravenous therapy and infusion management expertise</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="90"></div>
+                        </div>
+                        <span class="progress-percent">90%</span>
+                    </div>
                 </div>
                 <div class="skill-card">
+                    <div class="skill-number">05</div>
                     <div class="skill-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
                         </svg>
                     </div>
                     <h3>Team Collaboration</h3>
                     <p>Effective interdisciplinary communication and teamwork</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="96"></div>
+                        </div>
+                        <span class="progress-percent">96%</span>
+                    </div>
                 </div>
                 <div class="skill-card">
+                    <div class="skill-number">06</div>
                     <div class="skill-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                            <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
                         </svg>
                     </div>
                     <h3>EHR Documentation</h3>
-                    <p>Electronic Health Records management and documentation</p>
+                    <p>Electronic Health Records management and accurate documentation</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="85"></div>
+                        </div>
+                        <span class="progress-percent">85%</span>
+                    </div>
                 </div>
                 <div class="skill-card">
+                    <div class="skill-number">07</div>
                     <div class="skill-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/>
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01" />
                         </svg>
                     </div>
                     <h3>Critical Thinking</h3>
-                    <p>Problem-solving and clinical decision-making skills</p>
+                    <p>Advanced problem-solving and clinical decision-making</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="93"></div>
+                        </div>
+                        <span class="progress-percent">93%</span>
+                    </div>
                 </div>
                 <div class="skill-card">
+                    <div class="skill-number">08</div>
                     <div class="skill-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                         </svg>
                     </div>
                     <h3>Patient Education</h3>
-                    <p>Patient and family education and health literacy</p>
+                    <p>Comprehensive patient and family education programs</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="91"></div>
+                        </div>
+                        <span class="progress-percent">91%</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -317,7 +715,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="additional-skills">
                 <h3>Additional Proficiencies</h3>
                 <div class="proficiency-grid">
@@ -366,15 +764,15 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <p class="contact-intro">
-                        I'm always open to discussing new opportunities, collaborations, or answering 
+                        I'm always open to discussing new opportunities, collaborations, or answering
                         any questions you may have. Feel free to reach out!
                     </p>
                     <div class="contact-cards">
                         <div class="contact-card">
                             <div class="contact-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
                                 </svg>
                             </div>
                             <div class="contact-details">
@@ -385,7 +783,8 @@
                         <div class="contact-card">
                             <div class="contact-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                                 </svg>
                             </div>
                             <div class="contact-details">
@@ -396,17 +795,22 @@
                         <div class="contact-card">
                             <div class="contact-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
                                 </svg>
                             </div>
                             <div class="contact-details">
                                 <h4>Email</h4>
-                                <p><a href="mailto:nurunnaharalam2000@gmail.com">nurunnaharalam2000@gmail.com</a></p>
+                                <p><a
+                                        href="/cdn-cgi/l/email-protection#1a746f686f74747b727b687b767b77282a2a2a5a7d777b737634797577"><span
+                                            class="__cf_email__"
+                                            data-cfemail="cea0bbbcbba0a0afa6afbcafa2afa3fcfefefe8ea9a3afa7a2e0ada1a3">[email&#160;protected]</span></a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="personal-details">
                         <h3>Personal Information</h3>
                         <div class="details-grid">
@@ -429,7 +833,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form-container">
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
@@ -461,12 +865,33 @@
             <div class="footer-content">
                 <div class="footer-text">
                     <p>&copy; 2026 Nurunnahar. All rights reserved.</p>
-                    <p>Dedicated to excellence in nursing care and patient wellbeing.</p>
+                    <p>Dedicated to excellence in nursing care and patient advocacy.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/nurunnahar.nurse" target="_blank" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nurunnahar-nurse" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="/script.js"></script>
+
 </body>
+
 </html>
